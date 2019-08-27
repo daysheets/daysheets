@@ -1,0 +1,39 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 1em;
+  z-index: 101;
+
+  .logo {
+    height: 50px;
+    left: 25px;
+    position: absolute;
+    top: 10px;
+  }
+  .header-name {
+    color: white;
+    font-size: 24px;
+  }
+  .header-links {
+    color: white;
+    text-align: right;
+    span {
+      border: 1px solid white;
+      border-radius: 4px;
+      font-size: 16px;
+      padding: 5px 15px;
+    }
+  }
+  .header-links a {
+    color: white;
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    &:last-of-type {
+      border: 1px solid white;
+    }
+  }
+}

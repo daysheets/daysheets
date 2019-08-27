@@ -1,0 +1,403 @@
+@import "../_colors";
+.home-page {
+  display: flex;
+  flex-direction: 'column';
+  height: 100%;
+
+  .title-section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 63px;
+    width: 100%;
+
+    .middle-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      margin-left: 20%;
+      margin-right: 2em;
+      max-width: 1000px;
+    }
+
+    .title-name {
+      font-size: 46px;
+      line-height: 46px;
+      margin: .5em .5em .25em 0;
+    }
+
+    .title-description {
+      font-size: 18px;
+      margin: .25em .5em .5em 0;
+    }
+
+    .dropdown-menu {
+      ul {
+        list-style: none;
+        margin: 0 1.5em 0 0;
+        li {
+          margin: 0;
+
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 48px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: 110px;
+            height: 80px;
+            background-color: $orange;
+
+            .bounce {
+              display: inline-block;
+              position: relative;
+              -moz-animation: bounce 0.5s infinite linear;
+              -o-animation: bounce 0.5s infinite linear;
+              -webkit-animation: bounce 0.5s infinite linear;
+              animation: bounce 0.5s infinite linear;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sections {
+    //position: relative;
+
+    .menu-container {
+      position: -webkit-sticky;
+      position: sticky;
+      margin: 0 1.5em 0 1.5em;
+      top: 1.5em;
+
+      .menu-bars {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        button {
+          color: $grey-text;
+          font-size: 24px;
+          background-color: transparent;
+          border: 1px solid $grey-text;
+          outline: none;
+          margin-right: 1.1em;
+          i {
+            display:inline-block;
+            vertical-align:middle;
+          }
+        }
+        display: none;
+      }
+
+      .menu-bars button:hover {
+        background-color: $grey-text;
+        color: black;
+        border-color: $grey-text;
+      }
+    }
+    .menu-container ul {
+      list-style: none;
+
+      li {
+        margin: 0;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          width: 110px;
+          height: 80px;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          background-color: black;
+        }
+        a:hover {
+          color: $grey-border;
+        }
+      }
+      li.is-current a {
+        background-color: $orange;
+      }
+    }
+  }
+  .section-container {
+    min-height: 500px;
+    // fix stupid scrollspy issue of not highlighting correctly
+    margin-top: 1em;
+    &.colored {
+      background-color: $off-background;
+      outline: 1px solid $grey-border;
+    }
+    .section {
+      width: 60%;
+      max-width: 60%;
+
+      .section-header {
+        min-height: 150px;
+        border-bottom: 1px solid $grey-border;
+        text-align: center;
+
+        .title {
+          text-align: center;
+          color: $orange;
+          font-size: 46px;
+          margin-bottom: .5em;
+
+        }
+        .description {
+          color: $grey-text;
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  #profile {
+    margin-top: -346px;
+
+    .profile-details {
+      margin: 1em 0;
+      //width: 75%;
+      .about {
+        .about-me {
+          color: $orange;
+          font-size: 30px;
+          margin-bottom: 1em;
+        }
+        .description {
+          font-size: 18px;
+          color: $grey-text;
+        }
+      }
+      .profile-photo img {
+        margin: 1em 2em;
+        max-width: 250px;
+      }
+      .contact {
+        .details {
+          color: $orange;
+          font-size: 30px;
+          margin-bottom: 1em;
+        }
+        .label {
+          font-weight: bold;
+          font-size: 18px;
+          color: black;
+        }
+        .answer {
+          font-size: 18px;
+          color: $grey-text;
+          z-index: 100;
+
+          i {
+            font-size: 28px;
+            color: $orange;
+          }
+        }
+        .answer.resume i {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  #experience {
+    .experience-details {
+      margin: 1em 0;
+
+      .professional {
+        border-bottom: 1px solid $grey-border;
+        margin-bottom: 2em;
+      }
+      .professional, .education {
+        .title {
+          color: $orange;
+          font-size: 30px;
+          margin-bottom: 1em;
+        }
+        .job, .school {
+          margin-bottom: 2em;
+          .general {
+            margin-bottom: .5em;
+            .company {
+              font-weight: bold;
+            }
+            .date {
+              font-size: 16px;
+            }
+          }
+          .details {
+            .position {
+              font-weight: bold;
+            }
+            .description {
+              font-size: 16px;
+            }
+            .link {
+              z-index: 100;
+              font-size: 16px;
+              text-decoration: none;
+              color: $orange;
+              i {
+                margin-right: .5em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #projects {
+    .project-details {
+      margin: 1em 0;
+      .project {
+        .image-container {
+          position: relative;
+          img {
+            max-height: 400px;
+            opacity: 1;
+            display: block;
+            transition: .5s ease;
+            backface-visibility: hidden;
+          }
+          .overlay {
+            height: 100%;
+            width: 100%;
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color:  rgba(255, 152, 0, .9);
+            color: white;
+            padding: 2em;
+            overflow: scroll;
+
+            .title {
+              font-size: 30px;
+              font-weight: bold;
+              width: 100%;
+              padding-bottom: .5em;
+              margin-bottom: .5em;
+              border-bottom: 1px solid white;
+            }
+
+            .description {
+              font-size: 18px;
+            }
+
+            .link {
+              text-decoration: none;
+              color: white;
+              i {
+                margin-right: .5em;
+              }
+            }
+          }
+        }
+        .image-container:hover {
+          .overlay {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  #travel {
+    .travel-instructions {
+      margin-top: 1em;
+      font-size: 18px;
+      color: $grey-text;
+      z-index: 100;
+      a {
+        text-decoration: none;
+        color: $orange;
+      }
+    }
+    .map-container {
+      margin: 2em 0;
+    }
+  }
+
+  @media (max-width: 959px) {
+    .title-section .dropdown-menu ul {
+      margin: 0;
+      width: 100%;
+
+      li a {
+        display: block;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+    .sections .menu-container {
+      margin: 0;
+      top: 0;
+      z-index: 101;
+
+      .menu-bars {
+        display: inherit;
+      }
+
+      ul {
+        margin: 0;
+        width: 100%;
+
+        li a {
+          display: block;
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+      ul.closed {
+        visibility: hidden;
+        height: 0px;
+      }
+    }
+    #profile {
+      margin-top: 50px;
+    }
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% { top: 0; }
+  50% { top: -0.1em; }
+  70% { top: -0.2em; }
+  100% { top: 0; }
+}
+@-moz-keyframes bounce {
+  0% { top: 0; }
+  50% { top: -0.1em; }
+  70% { top: -0.2em; }
+  100% { top: 0; }
+}
+@-o-keyframes bounce {
+  0% { top: 0; }
+  50% { top: -0.1em; }
+  70% { top: -0.2em; }
+  100% { top: 0; }
+}
+@-ms-keyframes bounce {
+  0% { top: 0; }
+  50% { top: -0.1em; }
+  70% { top: -0.2em; }
+  100% { top: 0; }
+}
+@keyframes bounce {
+  0% { top: 0; }
+  50% { top: -0.1em; }
+  70% { top: -0.2em; }
+  100% { top: 0; }
+}

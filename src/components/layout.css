@@ -1,5 +1,21 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNovaRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNovaSemibold.otf') format('opentype');
+  font-weight: bold;
+}
+
+footer {
+  bottom: 0;
+  color: white;
+  position: absolute;
+}
+
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
