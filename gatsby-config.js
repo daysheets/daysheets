@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/daysheets",
   siteMetadata: {
     title: `Day Sheets`,
     description: `Touring can be a beautiful thing when executed properly. Day Sheets offers services to help your band organize everything you need for a successful tour from security to catering.`,
