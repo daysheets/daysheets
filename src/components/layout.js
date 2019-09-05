@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import 'font-awesome/css/font-awesome.min.css';
 
 import Header from "./header"
 import "./layout.scss"

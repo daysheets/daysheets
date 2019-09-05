@@ -1,0 +1,61 @@
+@import "../_colors";
+
+.service > div {
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  min-height: 125px;
+  padding: 10px 25px;
+
+  .icon {
+    align-items: center;
+    border: 2px solid $grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    min-height: 75px;
+    min-width: 75px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+
+    .title {
+      color: $blue !important;
+      font-size: 16px !important;
+      font-weight: bold !important;
+      line-height: unset !important;
+      margin: 0 !important;
+    }
+    .description {
+      color: $blue-text !important;
+      font-size: 16px !important;
+      margin: 0 !important;
+    }
+  }
+
+  .toggle i {
+    color: $blue;
+  }
+}
+
+.service.open > div:first-of-type {
+  border-bottom: 2px solid $grey;
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 0;
+}
+
+.service.open > div:last-of-type {
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 10px;
+}
+
+.service .subservice {
+  border-radius: 0;
+  margin: 0;
+}

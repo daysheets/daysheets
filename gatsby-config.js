@@ -5,7 +5,6 @@ module.exports = {
     author: `Josh Weinstein`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -14,6 +13,28 @@ module.exports = {
         path: `${__dirname}/src/images/`
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `icons`,
+        path: `${__dirname}/src/images/icons`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sections`,
+        path: `${__dirname}/src/content/sections/`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `services`,
+        path: `${__dirname}/src/content/services/`
+      }
+    },
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],
