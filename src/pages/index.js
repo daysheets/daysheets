@@ -14,11 +14,12 @@ class IndexPage extends React.Component {
     super(props);
   }
   render() {
+    console.log(this.props.data.allSectionsJson);
     return (
       <Layout>
         <SEO title="Home" />
         <div className="home-page">
-          <div className="full-section image">
+          <div className="full-section image" id="home">
             <ImageSection image={this.props.data.sectionOneImage} />
             <div className="middle-section section">
               <span className="title" dangerouslySetInnerHTML={{ __html: this.props.data.allSectionsJson.edges[0].node.title }} />
@@ -43,7 +44,7 @@ class IndexPage extends React.Component {
           </div>
           <div className="image" style={{ position: 'relative' }}>
             <ImageSection image={this.props.data.sectionThreeImage} />
-            <div className="services section">
+            <div className="services section" id="offer">
               <span className="title" dangerouslySetInnerHTML={{ __html: this.props.data.allSectionsJson.edges[2].node.title }} />
               {this.props.data.allServicesJson.edges.map(({ node }) => (
                 <Service
@@ -54,6 +55,21 @@ class IndexPage extends React.Component {
                   description={node.description}
                   title={node.title} />
               ))}
+            </div>
+          </div>
+          <div className="contact section" id="contact">
+            <Img
+              style={{
+                boxShadow: "-20px 20px 37px -9px rgba(143,140,143,1)",
+                height: "100%",
+                maxWidth: "400px",
+                width: "100%",
+              }}
+              sizes={this.props.data.sectionFourImage.sizes}
+            />
+            <div className="details">
+              <span className="title" dangerouslySetInnerHTML={{ __html: this.props.data.allSectionsJson.edges[3].node.title }} />
+              <span className="description" dangerouslySetInnerHTML={{ __html: this.props.data.allSectionsJson.edges[3].node.description }} />
             </div>
           </div>
         </div>
@@ -110,6 +126,11 @@ export const pageQuery = graphql`
     }
     sectionThreeImage: imageSharp(fluid: {originalName: {regex: "/stage.png/"}}) {
       sizes(maxWidth: 1680,) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    sectionFourImage: imageSharp(fluid: {originalName: {regex: "/van.png/"}}) {
+      sizes(maxWidth: 800, maxHeight: 800,) {
         ...GatsbyImageSharpSizes
       }
     }
