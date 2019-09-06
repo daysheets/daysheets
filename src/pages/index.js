@@ -14,7 +14,6 @@ class IndexPage extends React.Component {
     super(props);
   }
   render() {
-    console.log(this.props.data.allSectionsJson);
     return (
       <Layout>
         <SEO title="Home" />
@@ -51,7 +50,6 @@ class IndexPage extends React.Component {
                   key={node.icon}
                   children={node.services}
                   icon={node.icon}
-                  icons={this.props.data.icons.edges}
                   description={node.description}
                   title={node.title} />
               ))}
@@ -79,16 +77,6 @@ class IndexPage extends React.Component {
 }
 
 export default IndexPage
-
-export const squareImage = graphql`
-  fragment squareImage on File {
-    childImageSharp {
-      sizes(maxWidth: 72, maxHeight: 50,) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-  }
-`
 
 export const pageQuery = graphql`
   query PageQuery {
@@ -132,13 +120,6 @@ export const pageQuery = graphql`
     sectionFourImage: imageSharp(fluid: {originalName: {regex: "/van.png/"}}) {
       sizes(maxWidth: 800, maxHeight: 800,) {
         ...GatsbyImageSharpSizes
-      }
-    }
-    icons: allFile(filter: {relativePath: {regex: "/icons/"}}) {
-      edges {
-        node {
-          ...squareImage
-        }
       }
     }
   }

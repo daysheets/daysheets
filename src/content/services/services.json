@@ -1,131 +1,131 @@
 [
     {
-        "icon": "budget.png",
+        "icon": "budget",
         "title": "Budgeting + Staffing",
         "description": "Let us help you project your tour expenses. Need help finding a tech or TM? Don't worry about it, we've got you covered.",
         "services": [
             {
-                "icon": "",
+                "icon": "routing",
                 "title": "Review The Routing",
                 "description": "Let's look at your routing together and consider all options before you pull the trigger. Maybe a travel day here is cheaper than there, or maybe travel between shows is mentally impossible."
             },
             {
-                "icon": "",
+                "icon": "expenses",
                 "title": "Project Real Expenses",
                 "description": "Our team knows the ins and outs of costs, whether its backline expenses or travel costs. We can help you dial in the most realistic costs to make the most money."
             },
             {
-                "icon": "",
+                "icon": "team",
                 "title": "Hire the Best Team",
                 "description": "We have relationships with some of the best TM's, PM's, LD's and other crew members. We can find you the perfect crew member(s) that fit your budget and personality of your band."
             }
         ]
     },
     {
-        "icon": "visa.png",
+        "icon": "visa",
         "title": "Visas + Paperwork",
         "description": "We work with some of the best lawyers who can turn around entertainment visas better than anyone. Need documentation to visit Paris or another country? Loop us in and consider it done.",
         "services": [
             {
-                "icon": "",
+                "icon": "visas",
                 "title": "Visas",
                 "description": ""
             },
             {
-                "icon": "",
+                "icon": "immigration",
                 "title": "Immigration",
                 "description": ""
             },
             {
-                "icon": "",
+                "icon": "promoter",
                 "title": "Promoter Documentation",
                 "description": ""
             }
         ]
     },
     {
-        "icon": "advancing.png",
+        "icon": "advancing",
         "title": "Advancing",
         "description": "Send us the routing and rider, we do the rest. We chase promoters and organize the details. We will even enter the information into your favorite touring app.",
         "services": [
             {
-                "icon": "",
+                "icon": "reach",
                 "title": "Promoter Reach Out",
                 "description": "Once we have your grid, we can start reaching out to promoters in a way we know they like to advance. Keeping advances clean and professional is a great first impression for the show to come."
             },
             {
-                "icon": "",
+                "icon": "progress",
                 "title": "Tracking Progress",
                 "description": "Keep up with what we are doing in a simple and easy to use grid. We like to use task management systems like Asana or Trello, but will work with your team however you see fit. Easily track and changes to technical or hospitaltiy riders and stay in the know."
             },
             {
-                "icon": "",
+                "icon": "books",
                 "title": "Tourbooks & Apps",
                 "description": "Once your advances are complete, we can order spiral books, put the details in your favorite touring app, and even e-mail day sheets to your touring party the day before the show. However we can make your life easier, we are here to do that."
             }
         ]
     },
     {
-        "icon": "marketing.png",
+        "icon": "marketing",
         "title": "Tour Marketing",
         "description": "Let’s work together on building the greatest tour marketing strategy. Let’s borrow some of the promoter’s marketing budget and exceed expectations.",
         "services": [
             {
-                "icon": "",
+                "icon": "strategy",
                 "title": "Strategy",
                 "description": "We have seen thousands of marketing efforts from artists and tours. With your knowelge and ours, we can put together an aggressive campaign to sell your tour."
             },
             {
-                "icon": "",
+                "icon": "collaboration",
                 "title": "Collaboration",
                 "description": "Once a strategy is in place, we work directly with promoters to maximize potential. We will take advantage of your team's resources, and stay on top of the Promoters to make sure they are maximizng theirs."
             },
             {
-                "icon": "",
+                "icon": "execution",
                 "title": "Execution",
                 "description": "Facebook spends, Check.<br/> Pixel Targeting, Check.<br/> We will execute the designed strategy flawlessly, and will stay current with constantly changing platforms so you don't have to."
             }
         ]
     },
     {
-        "icon": "travel.png",
+        "icon": "travel",
         "title": "Travel + Lodging",
         "description": "Need a bus, van, flights, jets, trains or hotels?, we have it covered. Between our travel agencies, brokers and knowledge of online services, don’t stress your travel arrangements, even for a minute.",
         "services": [
             {
-                "icon": "",
+                "icon": "hotels",
                 "title": "Hotels",
                 "description": "Whether we decide to use our travel agents for your needs, or do it by hand online, we will find you the best hotels within your budget, and consider locations, and ammenties based on your routing."
             },
             {
-                "icon": "",
+                "icon": "flights",
                 "title": "Flights",
                 "description": "When it comes to flights, we will look at the cheapest, most reliable and comfortable flights that exists. We will never book a flight unless theres another one that follows so you won't miss the gig.. unless you tell us of course."
             },
             {
-                "icon": "",
+                "icon": "transport",
                 "title": "Ground Transportation",
                 "description": "In need of a bus or a van in peak season? Our years and years of relationships will allow us to find you exactly what you need. Need local ground for fly dates? We have connections to provide whatever is neccesary."
             }
         ]
     },
     {
-        "icon": "merch.png",
+        "icon": "merch",
         "title": "Fanclubs + Merch",
         "description": "After years of learning, we have tactics to maximize your fanclub growth while you tour. For Merch, we work with leading producers and supply chain experts to tackle drop shipments, e-commerce and customer service.",
         "services": [
             {
-                "icon": "",
+                "icon": "growth",
                 "title": "Fanclub Growth",
                 "description": "We have learned from the best on how to maintain your fanclub and grow it while you tour. Take it from us, our strategy works and will lead to further revenue earnings."
             },
             {
-                "icon": "",
+                "icon": "ticketing",
                 "title": "Ticketing",
                 "description": "We work with promoters to ensure your fanclubs gets exclusive acces to tickets, and that you will reap some benefit of ticket fees. When the opportunity exists to make money, we are in it to win it."
             },
             {
-                "icon": "",
+                "icon": "fanclub",
                 "title": "Merch",
                 "description": "As your fanbase grows, you need to keep up with merch. We've partnered with one of the strongest supply chain and e-commerce companies that exists to take the headache of merch off of your plate."
             }

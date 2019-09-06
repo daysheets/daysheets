@@ -15,12 +15,10 @@ class Service extends React.Component {
   }
 
   componentDidMount() {
-    const node = this.props.icons.find((node) => {
-      const element = node.node.childImageSharp;
-      return element.sizes.src.includes(this.props.icon);
-    });
-    if (node) {
-      this.setState({ icon: node.node.childImageSharp.sizes });
+    const svg = require(`../images/icons/${this.props.icon}.svg`);
+    
+    if (svg) {
+      this.setState({ icon: svg });
     }
   }
 
@@ -34,10 +32,8 @@ class Service extends React.Component {
     return (
       <div className={this.state.open ? 'service open' : 'service'} onClick={this.onOpen}>
         <div>
-          {this.state.icon && <span className="icon">
-            <Img
-              style={{ height: '27px', width: '40px' }}
-              sizes={this.state.icon} />
+          {this.state.icon && <span>
+            <img src={this.state.icon} className="icon" />
           </span>}
           <div className="details">
             <span className="title">{this.props.title}</span>
@@ -48,21 +44,22 @@ class Service extends React.Component {
             {this.state.open && <i className="fa fa-minus"></i>}
           </div>
         </div>
-        {this.state.open && this.props.children.map(v => (
-          <div className="subservice">
-            <div>
-              {v.icon && <span className="icon">
-                <Img
-                  style={{ height: '27px', width: '40px' }}
-                  sizes={v.icon} />
-              </span>}
-              <div className="details">
-                <span className="title">{v.title}</span>
-                <span className="description">{v.description}</span>
+        {this.state.open && this.props.children.map(v => {
+          const svg = require(`../images/icons/${v.icon}.svg`);
+          return (
+            <div className="subservice" key={v.icon}>
+              <div>
+                {v.icon && <span className="icon-container">
+                  <img src={svg} className="icon" />
+                </span>}
+                <div className="details">
+                  <span className="title">{v.title}</span>
+                  <span className="description">{v.description}</span>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
     );
   }
