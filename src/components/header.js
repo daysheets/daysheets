@@ -1,17 +1,14 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image";
 
-import './header.scss'
-import logo from '../images/daysheets_logo_light.svg'
+import './header.scss';
+import logo from '../images/daysheets_logo_light.svg';
+import Menu from './menu';
 
 const Header = () => (
   <div className="header">
     <img src={logo} alt="Day Sheets" className="logo" />
     <div className="header-links">
-      <span>Coming Soon</span>
+      <Menu />
     </div>
   </div>
 );

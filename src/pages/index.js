@@ -35,7 +35,7 @@ class IndexPage extends React.Component {
                   height: "300px",
                   opacity: .15,
                   position: "absolute",
-                  right: "-50px",
+                  right: "0",
                   top: "25%",
                   width: "300px",
                 }}
@@ -44,7 +44,7 @@ class IndexPage extends React.Component {
           </div>
           <div className="image" style={{ position: 'relative' }}>
             <ImageSection image={this.props.data.sectionThreeImage} />
-            <div className="services section" id="offer">
+            <div className="services section" id="services">
               <span className="title" dangerouslySetInnerHTML={{ __html: this.props.data.allSectionsJson.edges[2].node.title }} />
               {this.props.data.allServicesJson.edges.map(({ node }) => (
                 <Service

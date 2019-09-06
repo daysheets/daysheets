@@ -11,19 +11,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import 'font-awesome/css/font-awesome.min.css';
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <div
       style={{
@@ -32,16 +23,14 @@ const Layout = ({ children }) => {
         height: '100%'
       }}
     >
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <div style={{
         display: 'flex',
         flexDirection: 'column',
       }}>
         {children}
       </div>
-      <footer>
-        © {new Date().getFullYear()}, {data.site.siteMetadata.title}
-      </footer>
+      <Footer />
     </div>
   )
 }
