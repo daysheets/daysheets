@@ -29,17 +29,17 @@
             {
                 "icon": "visas",
                 "title": "Visas",
-                "description": ""
+                "description": "Heading out of the country?  We have you covered for all of your visa needs.  Our team has resources to high profile companies who process visas for the biggest names on the planet."
             },
             {
                 "icon": "immigration",
                 "title": "Immigration",
-                "description": ""
+                "description": "Whatever information you need before you cross the border, we’ve already thought of it.  We will prepare any documents you need in a timely fashion to make sure that you don’t get stuck."
             },
             {
                 "icon": "promoter",
                 "title": "Promoter Documentation",
-                "description": ""
+                "description": "Whether or not we advance your tour, we can be looped in when it comes to distribution of the proper materials to your promoters.  If it is a simple manifest, or obtaining letters from past promoters, we can handle it."
             }
         ]
     },
