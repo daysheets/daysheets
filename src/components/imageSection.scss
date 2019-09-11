@@ -6,7 +6,11 @@
   left: 0;
   z-index: -1;
 
-  .react-parallax {
+  .react-parallax, .react-parallax-content {
     height: 100%;
+
+    img {
+      top: -15%;
+    }
   }
 }

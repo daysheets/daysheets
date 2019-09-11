@@ -7,6 +7,7 @@ import './imageSection.scss';
 class ImageSection extends React.Component {
   render() {
     console.log(this.props.image);
+    console.log(this.props);
     return (
       <div className="image-section">
         {!this.props.parallax &&

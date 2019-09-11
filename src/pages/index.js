@@ -19,7 +19,7 @@ class IndexPage extends React.Component {
         <SEO title="Home" />
         <div className="home-page">
           <div className="full-section image" id="home">
-            <ImageSection image={this.props.data.sectionOneImage} />
+            <ImageSection image={this.props.data.sectionOneImage} parallax />
             <div className="middle-section section">
               <span className="title" dangerouslySetInnerHTML={{ __html: this.props.data.allSectionsJson.edges[0].node.title }} />
               <span className="description" dangerouslySetInnerHTML={{ __html: this.props.data.allSectionsJson.edges[0].node.description }} />
@@ -42,7 +42,7 @@ class IndexPage extends React.Component {
               />
           </div>
           <div className="image" style={{ position: 'relative' }}>
-            <ImageSection image={this.props.data.sectionThreeImage} />
+            <ImageSection image={this.props.data.sectionThreeImage} parallax />
             <div className="services section" id="services">
               <span className="title" dangerouslySetInnerHTML={{ __html: this.props.data.allSectionsJson.edges[2].node.title }} />
               {this.props.data.allServicesJson.edges.map(({ node }) => (
