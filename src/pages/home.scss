@@ -66,8 +66,10 @@
     }
 
     .rotate {
-      display: inline;
-      text-indent: 8px;
+      display: inline-block;
+      height: 32px;
+      min-width: 300px;
+      width: 300px;
 
       span {
         animation: topToBottom 12s linear infinite 0s;
