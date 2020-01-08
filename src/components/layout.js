@@ -18,19 +18,21 @@ const Layout = ({ children }) => {
   return (
     <div
       style={{
+        backgroundColor: '#3434FA',
         display: 'flex',
         flexDirection: 'column',
-        height: '100%'
+        height: '100vh'
       }}
     >
-      <Header />
+      {false && <Header />}
       <div style={{
         display: 'flex',
         flexDirection: 'column',
+        height: '100%',
       }}>
         {children}
       </div>
-      <Footer />
+      {false && <Footer />}
     </div>
   )
 }
